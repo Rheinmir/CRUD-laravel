@@ -1,6 +1,10 @@
 <?php
 
+// Defines routes for a Laravel application.
 use Illuminate\Support\Facades\Route;
+// Imports HomeController and AdminController from the App\Http\Controllers namespace.
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Defines a route group with '/' prefix, containing a GET route to HomeController's index method named 'home.index'.
+Route::group(['prefix' => ''], function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home.index');
+});
+
+// Defines a route group with prefix 'admin', containing a route to 'index' action of AdminController named 'admin.index'.
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 });
