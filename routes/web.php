@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 // Imports HomeController and AdminController from the App\Http\Controllers namespace.
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +32,11 @@ Route::post('/admin/register', [AdminController::class, 'checkRegister']);
 // Defines a group of routes with admin prefix, requiring authentication.
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+
+    Route::resources([
+        'category' =>CategoryController::class,
+        'product' =>ProductController::class,
+    ]);
+
+
 });
