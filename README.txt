@@ -1,0 +1,2 @@
+if error is caused by mising libaries, delete 'composer.lock' and 'vendor' folder in main folder, 'packages.php','services.php' in ./bootstrap/cache.
+then input'composer i' in terminal to reinstall missing files

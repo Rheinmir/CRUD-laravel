@@ -22,7 +22,9 @@ Route::group(['prefix' => ''], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
 });
 
-// Defines a route group with prefix 'admin', containing a route to 'index' action of AdminController named 'admin.index'.
-Route::group(['prefix' => 'admin'], function() {
+Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
+
+// Defines a group of routes with admin prefix, requiring authentication.
+Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 });

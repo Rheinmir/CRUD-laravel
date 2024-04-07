@@ -18,7 +18,7 @@
         <![endif]-->
     </head>
     <body>
-        <h1 class="text-center">Hello, Admin home index!</h1>
+        <h1 class="text-center">Hello, home index!</h1>
 
         
         <div class="jumbotron">
