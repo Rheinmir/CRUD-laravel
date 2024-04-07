@@ -27,21 +27,34 @@
                     <div class="panel-body">
                         <form action="" method="POST" role="form">
                             @csrf
-                            <legend class="text-center text-uppercase">Form Login</legend>
+                            <legend class="text-center text-uppercase">Form Register</legend>
+                            <div class="form-group">
+                                <label for="">Name:</label>
+                                <input type="text" placeholder="Input name" name="name" class="form-control">
+                                @error('name') <small>{{ $message }}</small> @enderror
+                            </div>
                             <div class="form-group">
                                 <label for="">Email:</label>
                                 <input type="text" placeholder="Input email" name="email" class="form-control">
                                 @error('email') <small>{{ $message }}</small> @enderror
+
                             </div>
                             <div class="form-group">
                                 <label for="">Password:</label>
-                                <input type="text" placeholder="Input password" name="password" class="form-control">
+                                <input type="password" placeholder="Input password" name="password" class="form-control">
                                 @error('password') <small>{{ $message }}</small> @enderror
+
+                            </div>
+                            <div class="form-group">
+                                <label for="">Confirm Password:</label>
+                                <input type="password" placeholder="Confirm password" name="confirm-password" class="form-control">
+                                @error('confirm-password') <small>{{ $message }}</small> @enderror
+
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="submit" class="btn btn-primary">Register</button>
                             </div>
-                            <p class="text-center"><a href="{{ route('admin.register') }}">Register</a></p>
+                            <p class="text-center"><a href="{{ route('admin.login') }}">Already have account?</a></p>
                         </form>
                     </div>
                 </div>

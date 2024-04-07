@@ -23,6 +23,9 @@ Route::group(['prefix' => ''], function () {
 });
 
 Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
+Route::post('/admin/login', [AdminController::class, 'checkLogin']);
+Route::get('/admin/register', [AdminController::class, 'register'])->name('admin.register');
+Route::post('/admin/register', [AdminController::class, 'checkRegister']);
 
 // Defines a group of routes with admin prefix, requiring authentication.
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
