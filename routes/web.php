@@ -24,19 +24,19 @@ Route::group(['prefix' => ''], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
 });
 
-Route::get('/admin/login', [AdminController::class, 'login'])->name('admin.login');
-Route::post('/admin/login', [AdminController::class, 'checkLogin']);
-Route::get('/admin/register', [AdminController::class, 'register'])->name('admin.register');
-Route::post('/admin/register', [AdminController::class, 'checkRegister']);
+Route::prefix('admin')->group(function () {
+    Route::get('/login', [AdminController::class, 'login'])->name('admin.login');
+    Route::post('/login', [AdminController::class, 'checkLogin']);
+    Route::get('/register', [AdminController::class, 'register'])->name('admin.register');
+    Route::post('/register', [AdminController::class, 'checkRegister']);
+});
 
 // Defines a group of routes with admin prefix, requiring authentication.
-Route::group(['prefix' => 'admin','middleware' => 'auth'], function() {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 
     Route::resources([
-        'category' =>CategoryController::class,
-        'product' =>ProductController::class,
+        'category' => CategoryController::class,
+        'product' => ProductController::class,
     ]);
-
-
 });
