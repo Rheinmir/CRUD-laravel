@@ -1,0 +1,400 @@
+.landing-page .pr {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #FFFFFF;
+  }
+  .landing-page .container-2 {
+    border-radius: 1.3rem;
+    background: #2489D3;
+    position: relative;
+    margin-right: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.3rem 0.5rem 0.4rem 0.6rem;
+    box-sizing: border-box;
+  }
+  .landing-page .pro-skills {
+    opacity: 0.9;
+    margin: 0.4rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #2489D3;
+  }
+  .landing-page .container-1 {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .landing-page .home {
+    margin-right: 0.8rem;
+    width: 6.4rem;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #2489D3;
+  }
+  .landing-page .classes {
+    opacity: 0.6;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .plans {
+    opacity: 0.6;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .about-us {
+    opacity: 0.6;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .group-2 {
+    margin: 0.4rem 0 0.6rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 26.7rem;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  .landing-page .login {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #2489D3;
+  }
+  .landing-page .container-10 {
+    border-radius: 3.1rem;
+    border: 0.1rem solid #2489D3;
+    position: relative;
+    margin-right: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 0 0.5rem 0rem;
+    width: 7.2rem;
+    box-sizing: border-box;
+  }
+  .landing-page .sign-in {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #FFFFFF;
+  }
+  .landing-page .container {
+    border-radius: 3.1rem;
+    background: #2489D3;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 0 0.5rem 0rem;
+    width: 7.2rem;
+    box-sizing: border-box;
+  }
+  .landing-page .container-16 {
+    margin: 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    width: 15.6rem;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+  .landing-page .container-13 {
+    margin: 0 8.8rem 1.3rem 4.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 81.1rem;
+    box-sizing: border-box;
+  }
+  .landing-page .learn-anew-skill-everyday-anytime-and-anywhere {
+    position: relative;
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .courses-covering-all-tech-domains-for-you-to-learn-and-explore-new-oppurtunities-learn-from-industry-experts-and-land-your-dream-job {
+    opacity: 0.6;
+    margin-bottom: 2.3rem;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    color: #000000;
+  }
+  .courses-covering-all-tech-domains-for-you-to-learn-and-explore-new-oppurtunities-learn-from-industry-experts-and-land-your-dream-job-sub26 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.333;
+  }
+  .courses-covering-all-tech-domains-for-you-to-learn-and-explore-new-oppurtunities-learn-from-industry-experts-and-land-your-dream-job {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.333;
+  }
+  .landing-page .start-trial {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #FFFFFF;
+  }
+  .landing-page .container-14 {
+    border-radius: 3.1rem;
+    background: #2489D3;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.9rem 0rem 1.1rem 0;
+    width: 12.5rem;
+    box-sizing: border-box;
+  }
+  .landing-page .how-it-works {
+    position: relative;
+    margin: 0.9rem 0 1.1rem 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #2489D3;
+  }
+  .landing-page .container-11 {
+    margin-bottom: 4.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 24.8rem;
+    box-sizing: border-box;
+  }
+  .landing-page .container {
+    margin-right: 1.8rem;
+    width: 11.3rem;
+    overflow-wrap: break-word;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: #F0C932;
+  }
+  .landing-page .container-2 {
+    overflow-wrap: break-word;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: #2489D3;
+  }
+  .landing-page .container-1 {
+    overflow-wrap: break-word;
+    font-family: 'Outfit';
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: #FE753F;
+  }
+  .landing-page .container-12 {
+    margin: 0 2.3rem 0.1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32rem;
+    box-sizing: border-box;
+  }
+  .landing-page .courses-to-choose-from {
+    margin-right: 1.8rem;
+    width: 11.4rem;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .students-trained {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .professional-trainers {
+    overflow-wrap: break-word;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #000000;
+  }
+  .landing-page .container-9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 34.3rem;
+    box-sizing: border-box;
+  }
+  .landing-page .vector-6 {
+    position: absolute;
+    top: 4.2rem;
+    right: 7.9rem;
+    width: 13.3rem;
+    height: 1rem;
+  }
+  .landing-page .rectangle-2 {
+    border-radius: 3.1rem;
+    border: 0.1rem solid #2489D3;
+    position: absolute;
+    right: 7.5rem;
+    bottom: 11.9rem;
+    width: 12.5rem;
+    height: 3.8rem;
+  }
+  .landing-page .container-7 {
+    position: relative;
+    margin: 6.5rem 14.8rem 0 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .landing-page .ellipse-8 {
+    border-radius: 14.7rem;
+    background: #FE753F;
+    position: absolute;
+    left: 0rem;
+    top: 0.6rem;
+    width: 29.4rem;
+    height: 29.4rem;
+  }
+  .landing-page .happy-young-woman-holding-laptop-gray-wall-transformed-1 {
+    background: url('../assets/images/happyYoungWomanHoldingLaptopGrayWallTransformed2.png');
+    position: absolute;
+    top: -4.9rem;
+    right: -5.3rem;
+    width: 33.7rem;
+    height: 34.9rem;
+  }
+  .landing-page .mask-group {
+    border-radius: 14.7rem;
+    position: relative;
+    width: 29.4rem;
+    height: 29.4rem;
+  }
+  .landing-page .container-4 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.6rem 0.6rem 0 0;
+    width: 30rem;
+    height: 30rem;
+    box-sizing: border-box;
+  }
+  .landing-page .happy-young-woman-holding-laptop-gray-wall-transformed-2 {
+    background: url('../assets/images/happyYoungWomanHoldingLaptopGrayWallTransformed2.png');
+    position: absolute;
+    left: 0.9rem;
+    top: 0rem;
+    right: 0rem;
+    height: 27.3rem;
+  }
+  .landing-page .group-1 {
+    position: relative;
+    margin: 8.4rem 0 2.4rem 0;
+    padding-top: 4rem;
+    width: 34.6rem;
+    height: 34rem;
+    box-sizing: border-box;
+  }
+  .landing-page .removebg-preview-11 {
+    background: url('../assets/images/removebgPreview1.png') 50% / cover no-repeat;
+    transform: rotate(13.604deg);
+    position: absolute;
+    right: 0.3rem;
+    bottom: 1.2rem;
+    width: 20.8rem;
+    height: 20.8rem;
+  }
+  .landing-page .container-3 {
+    position: absolute;
+    top: 6.5rem;
+    right: 7.4rem;
+    width: 9.4rem;
+    height: 9.2rem;
+  }
+  .landing-page .container-15 {
+    position: absolute;
+    right: 35.4rem;
+    bottom: 4rem;
+    width: 10.6rem;
+    height: 10.6rem;
+  }
+  .landing-page .container-6 {
+    background: #F8F8F8;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 6.5rem 5.7rem 7.7rem 5rem;
+    width: fit-content;
+    box-sizing: border-box;
+  }
+  .landing-page .removebg-preview-1 {
+    background: url('../assets/images/removebgPreview11.png') 50% / cover no-repeat;
+    transform: rotate(-11.352deg);
+    position: absolute;
+    top: 3.3rem;
+    right: 27.5rem;
+    width: 31.2rem;
+    height: 31.2rem;
+  }
+  .landing-page {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 0 3.9rem 0;
+    width: 94.5rem;
+    box-sizing: border-box;
+  }
+  
