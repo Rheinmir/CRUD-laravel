@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ URL::asset('css/global.css'); }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title Page</title>
 
@@ -38,7 +39,7 @@
     </nav>
     
     
-    <div class="container">
+    <div class="">
         @yield('main')
     </div>
     
