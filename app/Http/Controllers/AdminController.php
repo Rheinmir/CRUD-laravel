@@ -17,7 +17,8 @@ class AdminController extends Controller
     }
     
  public function checkLogin() {
-    request()->validate([
+    // Validates user credentials and logs them in, redirecting to admin index page on success or back on failure.
+request()->validate([
         'email' => 'required|email|exists:users',
         'password' => 'required',
     ]);
