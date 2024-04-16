@@ -39,7 +39,7 @@
     </nav>
     
     
-    <div class="">
+    <div class="ct">
         @yield('main')
     </div>
     
