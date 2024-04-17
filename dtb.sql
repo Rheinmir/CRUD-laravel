@@ -28,6 +28,17 @@ Create table products
     FOREIGN KEY (category_id) REFERENCES categories(id)
 );
 
+Create table product_images
+(
+    id int primary key auto_increment,
+    image varchar(100) NOT NULL,
+    product_id int NOT NULL,
+    status tinyint(1) DEFAULT '0',
+    created_at date DEFAULT current_timestamp(),
+    updated_at date null,
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
 Create table users
 (
     id int primary key auto_increment,
@@ -37,6 +48,17 @@ Create table users
     created_at date DEFAULT current_timestamp(),
     updated_at date null
 );
+
+Create table personal_access_tokens
+(
+    id int primary key auto_increment,
+    name varchar(100) NOT NULL,
+    email varchar(100) NOT NULL UNIQUE,
+    password varchar(200) NOT NULL,
+    created_at date DEFAULT current_timestamp(),
+    updated_at date null
+);
+
 
 Create table banners
 (
@@ -66,6 +88,7 @@ Create table blogs
     updated_at date null
 );
 
+
 Create table customers
 (
     id int primary key auto_increment,
@@ -80,12 +103,31 @@ Create table customers
     updated_at date null
 );
 
+Create table customer_reset_tokens
+(
+    email varchar(100) primary key,
+    token varchar(100) NOT NULL UNIQUE,
+    created_at date DEFAULT current_timestamp(),
+    updated_at date null
+);
+
 Create table comments
 (
     id int primary key auto_increment,
     customer_id int NOT NULL,
     product_id int NOT NULL,
     comment text,
+    created_at date DEFAULT current_timestamp(),
+    updated_at date null,
+    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+Create table favorites
+(
+    id int primary key auto_increment,
+    customer_id int NOT NULL,
+    product_id int NOT NULL,
     created_at date DEFAULT current_timestamp(),
     updated_at date null,
     FOREIGN KEY (customer_id) REFERENCES customers(id),
@@ -105,6 +147,16 @@ Create table orders
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
 
+Create table order_details
+(
+    order_id int NOT NULL,
+    product_id int NOT NULL,
+    quantity tinyint NOT NULL,
+    price tinyint NOT NULL,
+    primary key (order_id, product_id),
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
 
 INSERT INTO banners(name, image, link, status) VALUES
 ('Banner 1', 'banner_bg.png', '#', 1) ;
