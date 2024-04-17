@@ -1,8 +1,8 @@
-drop database if exists on_tap;
+drop database if exists ecourse;
 
-Create database on_tap;
+Create database ecourse;
 
-use on_tap;
+use ecourse;
 
 Create table categories
 (
@@ -92,6 +92,17 @@ Create table comments
     FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
+Create table favorites
+(
+    id int primary key auto_increment,
+    customer_id int NOT NULL,
+    product_id int NOT NULL,
+    created_at date DEFAULT current_timestamp(),
+    updated_at date null,
+    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
 Create table orders
 (
     id int primary key auto_increment,
@@ -105,6 +116,16 @@ Create table orders
     FOREIGN KEY (customer_id) REFERENCES customers(id)
 );
 
+Create table order_details
+(
+    order_id int NOT NULL,
+    product_id int NOT NULL,
+    quantity tinyint NOT NULL,
+    price tinyint NOT NULL,
+    primary key (order_id, product_id),
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
 
 INSERT INTO banners(name, image, link, status) VALUES
 ('Banner 1', 'banner_bg.png', '#', 1) ;
